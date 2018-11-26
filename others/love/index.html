@@ -129,10 +129,10 @@
 
       
       playDuration = playDuration - 1;
-      if (playDuration < 15){
-        p_dt_dt.innerHTML = "nice to meet you";
-      }else if(playDuration < 0){
+      if (playDuration < 0){
         p_dt_dt.innerHTML = "生日快乐🎂";
+      }else if(playDuration < 10){
+        p_dt_dt.innerHTML = "nice to meet you";
       }
     }
 
