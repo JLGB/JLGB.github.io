@@ -17,7 +17,7 @@
             color: #CFEBE4;
             font-size: 18px;
             line-height: 2;
-            letter-spacing: 1.2px;
+            letter-spacing: 1px;
             margin: 0;
         }
 
@@ -99,7 +99,7 @@
 <body>
 <!--更改为你女朋友的头像-->
 <div class="cs">
-    <img src="http://wx1.sinaimg.cn/large/006gFOhdly1fr0hdrzlolj30b40b4dg7.jpg" id="logo">
+    <!--<img src="http://wx1.sinaimg.cn/large/006gFOhdly1fr0hdrzlolj30b40b4dg7.jpg" id="logo">-->
 </div>
 <canvas class="canvas" width="1820" height="905"></canvas>
 <p class="text" id="p_dt_dt" style="color: #ffffff;">
@@ -108,7 +108,7 @@
     <span id="span_dt_dt"></span>
 </p>
 <script language="javascript">
-    playDuration = 15;
+    playDuration = 23;
 
     function show_date_time() {
         window.setTimeout("show_date_time()", 1000);
@@ -130,7 +130,7 @@
       p_dt_dt.innerHTML = "nice to meet you";
       playDuration = playDuration - 1;
       if (playDuration < 0){
-        span_dt_dt.innerHTML = "生日快乐🎂";
+        p_dt_dt.innerHTML = "生日快乐🎂";
       }
     }
 
@@ -180,7 +180,7 @@
                 requestFrame.call(window, this.loop.bind(this));
             },
             adjustCanvas: function () {
-                canvas.width = window.innerWidth - 100;
+                canvas.width = window.innerWidth + 0;
                 canvas.height = window.innerHeight - 30;
             },
             clearFrame: function () {
@@ -681,7 +681,7 @@
     }());
     S.init();
 </script>
-//音乐可改
+<!--//音乐可改-->
 <audio autoplay="autoplay" loop="loop">
     <source src="http://m10.music.126.net/20180509183512/5ae461e9a42675d782840bf139b05c60/ymusic/e492/ea7a/6a27/8799d19e52d9bbe3ae15febb03d7efdb.mp3" type="audio/mpeg">
 </audio>
